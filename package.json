@@ -1,0 +1,42 @@
+{
+  "name": "fanmark",
+  "private": true,
+  "version": "1.0.0",
+  "description": "饭否记录同步",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "scripts": {
+    "build": "pkg ./ --out-path=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binjoo/drone-fanmark.git"
+  },
+  "keywords": [
+    "fanfou",
+    "drone",
+    "plugin"
+  ],
+  "author": "binjoo<icesword28@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binjoo/drone-fanmark/issues"
+  },
+  "homepage": "https://github.com/binjoo/drone-fanmark#readme",
+  "dependencies": {
+    "@notionhq/client": "^0.4.13",
+    "cheerio": "^1.0.0-rc.10",
+    "dayjs": "^1.10.7",
+    "fast-csv": "^4.3.6",
+    "fs-extra": "^10.0.0",
+    "undici": "^4.13.0"
+  },
+  "pkg": {
+    "targets": [
+      "node16-alpine-x64"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^5.5.2"
+  }
+}
